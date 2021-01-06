@@ -1,0 +1,39 @@
+#ContactForm div{
+	display: block;
+	padding: 10px;
+	margin-left: 5%;
+}
+
+#ContactForm span{
+	font-size: 18px;
+	padding-right: 5px;
+	width: 100px;
+}
+
+#ContactForm input{
+	width: 40%;
+	height: 15px;
+	border:1px solid black;
+	padding: 5px;
+	display: block;
+}
+
+#ContactForm textarea{
+	width: 40%;
+	min-height:120px; 
+	border:1px solid black;
+	display: block;
+	padding: 5px;
+}
+
+#ContactForm a{
+	margin-left: 12%;
+	padding: 5px;
+	border:2px solid lightblue;
+	background: lightblue;
+}
+
+#ContactForm a:hover{
+	background: tomato;
+	cursor: pointer;
+}
