@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Относно</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial.scale=1.0">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/contact.css">
+<script src="js/scripts.js"></script>
+</head>
+
+<body id="page2">
+	<div class="header">
+		<nav>
+			<div class="title">
+				<h1>Връзка</h1>
+			</div>
+			<ul id="items">
+				<li><a href="index.html">Начало</a></li>
+				<li><a class="active" href=#>Относно</a></li>
+			</ul>
+			<div class="burger" onclick="openMenu(); toggle(this)">
+				<div class="line1"></div>
+				<div class="line2"></div>
+				<div class="line3"></div>
+			</div>
+		</nav>
+	</div>	
+					
+	<div class="content">
+		<h3>Контакти:</h3>
+		<ul>
+       		<li>Русенски университет "Ангел Кънчев", гр. Русе</li>
+       		<li>Робърт Руменов Петров</li>
+        	<li>Специалност: <span>Софтуерно инженерство</span></li>
+        	<li>ФН: <span>206303</span></li>
+       		<li>Телефон: <span>+359884465234</span></li>
+        	<li>Имейл: <a href="mailto:robartpetrov@gmail.com">robartpetrov@gmail.com</a></li>
+        </ul> <br><br><br>
+
+		<form id="ContactForm">	
+			<div><span>Вашето име:</span><input type="text" placeholder="Име.." class="input"></div>
+			<div><span>Ел. поща:</span><input type="text" placeholder="Поща.." class="input"></div>
+			<div><span>Съобщение:</span><textarea name="textarea" placeholder="Напишете нещо.." cols="1" rows="1"></textarea></div>
+			<br>
+			<a class="button" onclick="document.getElementById('ContactForm').reset()">Изчисти</a>
+			<a class="button" onclick="document.getElementById('ContactForm').submit()">Изпрати</a>
+		</form>
+	</div>
+
+	<div class="footer">
+		<span>
+			 <h2>© 2020 Robart Petrov</h2>
+		</span>
+		<ul id="icons">
+			<li><a href="https://www.facebook.com/robart.petrov" title="Facebook"><img src="images/icon1.png"></li>
+			<li><a href="https://www.instagram.com/robart.petrov/?hl=bg" title="Instagram"><img src="images/instagram.png"></li>
+			<li><a href = "https://www.youtube.com/channel/UCCwWOobsnuhZETL0hFQEydw?view_as=subscriber" title="Youtube"><img src = "images/youtube.png"></li>
+		</ul>
+	</div>
+</body>
+</html>
