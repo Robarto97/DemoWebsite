@@ -1,71 +1,67 @@
 * {
-	margin:0;
+	margin: 0;
 	padding: 0;
 	text-decoration: none;
 	list-style: none;
 	font-family: sans-serif;
 }
 
-body{
+body {
 	background-color: gray;
 }
 
-header{
+header {
 	position: relative;
 	width: 100%;
 	height: auto;
 	background-color: tomato;
 }
 
-nav{
+nav {
 	display: flex;
 	justify-content: space-around;
-	padding:5px;
-	font-family:serif;
+	padding: 5px;
+	font-family: serif;
 	min-height: 50px;
 }
 
-.title{
-	color:white;
+.title {
+	color: white;
 	font-size: 22px;
-	margin:auto;
+	margin: auto;
 	width: 20%;
 }
-.burger{
+.burger {
 	cursor: pointer;
-	border:2px solid white;
-	margin:auto; 
+	border: 2px solid white;
+	margin: auto; 
 }
 
-.burger div{
+.burger div {
 	width: 25px;
 	height: 4px;
-	background-color:white;
-	margin:6px;
+	background-color: white;
+	margin: 6px;
 	transition: all .4s ease;
 }
 
-.burger:hover{background: black;}
+.burger:hover {background: black;}
 
-#items.active{display: block;opacity: 1;}
+#items.active {display: block; opacity: 1;}
 
-.toggle .line1{
+.toggle .line1 {
 	transform: rotate(45deg) translate(7px,7px);
 }
 
-.toggle .line2{
+.toggle .line2 {
 	opacity: 0;
 }
 
-.toggle .line3{
+.toggle .line3 {
 	transform: rotate(-45deg) translate(7px,-7px);
 }
 
-.active{
-	cursor:auto;
-}
-
-.content{
+main {
 	width: 70%;
 	margin: 0 15% 0 15%;
 	background: white;
@@ -73,27 +69,27 @@ nav{
 	min-height: 780px;
 }
 
-#page1 .content p{
+#page1 main p {
 	margin-left: 5%;
 	margin-right: 5%;
 	font-size: 18px;
 	padding: 10px;
 }
-.content h2{
+main h2 {
 	text-align: center;
 	font-weight: bold;
 	font-size: 24px;
 	padding: 10px;
 }
 
-#page1 .content img{
-	display:block;
+#page1 main img {
+	display: block;
 	width: 80%;
-	margin:0 auto 10px auto;
+	margin: 10px auto;
 	border: 2px solid black;
 }
 
-#page2 .content li{
+#page2 main li {
 	margin-left: 5%;
 	margin-right: 5%;
 	font-size: 18px;
@@ -101,25 +97,40 @@ nav{
 	display: block;
 }
 
-#page2 .content ul li span{
+#page2 main ul li span {
 	font-weight: bold;
 	font-style: italic;
 }
 
-#page1 .content h3{
+#page1 main h3 {
 	margin-left: 6%;
 	font-style: italic;
 }
 
-#page1 .content section{
+#page1 main section {
 	width: 80%;
-	border:1px solid gray;
+	border: 1px solid gray;
 	padding: 5px 0;
 	margin: 15px 10%;
-	box-shadow: 5px 5px 5px gray;
+	box-shadow: 5px 5px 5px 2px gray;
 }
 
-footer{
+#page1 main figure {
+	border-radius: 15px;
+	padding: 1.5em 0;
+	margin: 4em auto;
+	width: 80%;
+	box-shadow: inset 2px 2px 5px 2px darkgreen;
+}
+
+#page1 main figure figcaption {
+	text-align: center;
+	font-weight: bold;
+	font-style: italic;
+	word-spacing: 5px;
+}
+
+footer {
 	width: 100%;
 	height: 50px;
 	background-color: tomato;
@@ -128,8 +139,9 @@ footer{
 	padding-top: 20px;
 }
 
-footer span{
+footer span {
 	margin-left: 20%;
+	font-size: 20px;
 	font-weight: bold;
 	float: left;
 	align-content: center;
@@ -140,29 +152,31 @@ footer span{
 	right: 25%;
 }
 
-#icons li{
+#icons li {
 	position: relative;
 	display: inline-block;
 }
 
-#icons img{
-	margin:5px;
+#icons img {
+	margin: 5px;
 	background: white;
 }
 
-@media screen and (min-width: 1024px){
-	.burger{display: none;}
-	#items{display:flex; position:relative;margin:auto;}
-	#items li{display: inline;}
-	#items a{padding:10px;display: block;letter-spacing: 2px;
-	font-size: 18px;color:blue;text-transform: uppercase;opacity: 1;}
-	#items li:hover{background: yellow;}
+@media screen and (min-width: 1024px) {
+	.burger {display: none;}
+	#items {display: flex; position: relative; margin: auto; }
+	#items li {display: inline; margin: 0 10px;}
+	#items a {padding: 10px; display: block; letter-spacing: 2px;
+	font-size: 18px; color: blue; text-transform: uppercase;}
+	#items li:hover {background: yellow;}
+	.active {cursor: auto; background:tomato;}
 }
 
-@media screen and (max-width: 1024px){
-	#items{right: 15%;top: 100%;width: 15%;position: absolute;
-	background-color: cyan;text-align: center;display: none;}
-	#items a{padding:10px;display: block;letter-spacing: 2px;
-	font-size: 18px;color:blue;}
-	#items li:hover{background: tomato;}
+@media screen and (max-width: 1024px) {
+	body {background-color: darkgray;}
+	#items {right: 15%; top: 100%; width: 15%; position: absolute;
+	background-color: cyan; text-align: center; display: none;}
+	#items a {padding: 10px; display: block; letter-spacing: 2px;
+	font-size: 18px; color: blue;}
+	#items li:hover {background: tomato;}
 }

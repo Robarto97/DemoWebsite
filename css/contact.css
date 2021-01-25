@@ -1,39 +1,39 @@
-#ContactForm div{
+#ContactForm section {
 	display: block;
-	padding: 10px;
+	padding: 5px;
 	margin-left: 5%;
 }
 
-#ContactForm span{
-	font-size: 18px;
-	padding-right: 5px;
-	width: 100px;
+#ContactForm div {
+	padding: 15px 0;
+	margin-top: 15px;
 }
 
-#ContactForm input{
+#ContactForm input {
 	width: 40%;
 	height: 15px;
-	border:1px solid black;
+	border: 1px solid black;
 	padding: 5px;
 	display: block;
 }
 
-#ContactForm textarea{
+#ContactForm textarea {
 	width: 40%;
-	min-height:120px; 
-	border:1px solid black;
+	min-height: 120px; 
+	border: 1px solid black;
 	display: block;
 	padding: 5px;
+	margin-bottom: 10px;
 }
 
-#ContactForm a{
-	margin-left: 12%;
+#ContactForm a {
+	margin-left: 13.3%;
 	padding: 5px;
-	border:2px solid lightblue;
+	border: 2px solid blue;
 	background: lightblue;
 }
 
-#ContactForm a:hover{
+#ContactForm a:hover {
 	background: tomato;
 	cursor: pointer;
 }
