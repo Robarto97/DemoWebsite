@@ -89,6 +89,37 @@ main h2 {
 	border: 2px solid black;
 }
 
+section > p{
+	border:2px dashed lightgreen;
+	margin: 5px 0; 
+}
+
+#page2 main ul > li:before {
+	content: '\00BB';
+}
+
+#page1 h2 + section {
+	background: lightyellow;
+}
+
+main > h2 {
+	font-style: italic;
+	color: darkviolet;
+}
+
+#page2 ul + form {
+	border:2px dashed red;
+}
+
+#page1 h3 ~ p {
+	color:red;
+	text-align: justify;
+}
+
+#page2 section > input[type=text] {
+	background-color: khaki;
+}
+
 #page2 main li {
 	margin-left: 5%;
 	margin-right: 5%;

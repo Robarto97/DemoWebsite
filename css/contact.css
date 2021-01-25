@@ -1,16 +1,16 @@
+#ContactForm {
+	width: 40%;
+	padding: 20px;
+	margin: 20px 30px;
+}
 #ContactForm section {
 	display: block;
 	padding: 5px;
 	margin-left: 5%;
 }
 
-#ContactForm div {
-	padding: 15px 0;
-	margin-top: 15px;
-}
-
 #ContactForm input {
-	width: 40%;
+	width: 90%;
 	height: 15px;
 	border: 1px solid black;
 	padding: 5px;
@@ -18,7 +18,7 @@
 }
 
 #ContactForm textarea {
-	width: 40%;
+	min-width: 90%;
 	min-height: 120px; 
 	border: 1px solid black;
 	display: block;
@@ -27,7 +27,7 @@
 }
 
 #ContactForm a {
-	margin-left: 13.3%;
+	margin-left: 25%;
 	padding: 5px;
 	border: 2px solid blue;
 	background: lightblue;
