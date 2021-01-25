@@ -3,61 +3,66 @@
 <head>
 <title>About</title>
 <meta charset="utf-8">
+<meta name="description" content="McKinley Chalet Resort">
 <meta name="viewport" content="width=device-width, initial.scale=1.0">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/contact.css">
+<!-- <base href="https://firstweb.com/" target="_blank"> -->
 </head>
 
 <body id="page2">
-	<div class="header">
-		<nav>
-			<div class="title">
-				<h1>About</h1>
-			</div>
-			<ul id="items">
-				<li><a href="index.html">Start</a></li>
-				<li><a class="active" href=#>About</a></li>
-			</ul>
-			<div class="burger" onclick="openMenu(); toggle(this)">
-				<div class="line1"></div>
-				<div class="line2"></div>
-				<div class="line3"></div>
-			</div>
-		</nav>
-	</div>	
-					
-	<div class="content">
-		<h3>Contacts:</h3>
-		<ul>
-       		<li>University of Ruse "Angel Kunchev"</li>
-       		<li>Robart Rumenov Petrov</li>
-        	<li>Specialty: <span>Software engineering</span></li>
-        	<li>Faculty number: <span>206303</span></li>
-       		<li>Phone number: <span>+359884465234</span></li>
-        	<li>Email: <a href="mailto:robartpetrov@gmail.com">robartpetrov@gmail.com</a></li>
-        </ul> <br><br><br>
 
-		<form id="ContactForm">	
-			<div><span>Your names:</span><input type="text" placeholder="Names.." class="input"></div>
-			<div><span>Email:</span><input type="text" placeholder="Email.." class="input"></div>
-			<div><span>Message:</span><textarea name="textarea" placeholder="Write something.." cols="1" 
-				rows="1"></textarea></div>
-			<br>
-			<a class="button" onclick="document.getElementById('ContactForm').reset()">Clear</a>
-			<a class="button" onclick="document.getElementById('ContactForm').submit()">Submit</a>
-		</form>
-	</div>
+<!-- Header -->
+  <header>
+	<nav>
+	  <div class="title">
+		<h1>About</h1>
+	  </div>
+	  <ul id="items">
+		<li><a href="index.html">Start</a></li>
+		<li><a class="active" href=#>About</a></li>
+	  </ul>
+	  <div class="burger" onclick="openMenu(); toggle(this)">
+		<div class="line1"></div>
+		<div class="line2"></div>
+		<div class="line3"></div>
+	  </div>
+	</nav>
+  </header>	
 
-	<div class="footer">
-		<span>
-			 <h2>© 2020 Robart Petrov</h2>
-		</span>
-		<ul id="icons">
-			<li><a href="https://www.facebook.com/robart.petrov" title="Facebook"><img src="images/facebook.png"></li>
-			<li><a href="https://www.instagram.com/robart.petrov/?hl=bg" title="Instagram"><img src="images/instagram.png"></li>
-			<li><a href = "https://www.youtube.com/channel/UCCwWOobsnuhZETL0hFQEydw?view_as=subscriber" title="Youtube"><img src = "images/youtube.png"></li>
-		</ul>
-	</div>
-	<script src="js/scripts.js"></script>
+<!-- Main content-->
+  <main>
+	<h2>Contacts:</h2>
+	<ul>
+      <li>University of Ruse "Angel Kunchev"</li>
+      <li>Robart Rumenov Petrov</li>
+      <li>Specialty: <span>Software engineering</span></li>
+      <li>Faculty number: <span>206303</span></li>
+      <li>Phone number: <span>+359884465234</span></li>
+      <li>Email: <a href="mailto:robartpetrov@gmail.com">robartpetrov@gmail.com</a></li>
+    </ul>
+
+	<form id="ContactForm">	
+	  <div>	  	
+	  	<section><h4>Your names:</h4><input type="text" placeholder="Names.." class="input"></section>
+	  	<section><h4>Email:</h4><input type="text" placeholder="Email.." class="input"></section>
+	  	<section><h4>Message:</h4><textarea name="textarea" placeholder="Write something.." cols="1" rows="1"></textarea></section>
+	    <a class="button" onclick="document.getElementById('ContactForm').reset()">Clear</a>
+	  	<a class="button" onclick="document.getElementById('ContactForm').submit()">Submit</a>
+	  </div>
+	</form>
+  </main>
+
+<!-- Footer -->
+  <footer>
+	<span>&copy; 2020 Robart Petrov</span>
+	  <ul id="icons">
+		<li><a href="https://www.facebook.com/robart.petrov" title="Facebook"></a><img src="images/facebook.png" alt="Facebook"></li>
+	  	<li><a href="https://www.instagram.com/robart.petrov/?hl=bg" title="Instagram"></a><img src="images/instagram.png" alt="Instagram"></li>
+	  	<li><a href = "https://www.youtube.com/channel/UCCwWOobsnuhZETL0hFQEydw?view_as=subscriber" title="Youtube"></a><img src = "images/youtube.png" alt="Youtube"></li>
+	  </ul>
+  </footer>
+	
+  <script src="js/scripts.js"></script>
 </body>
 </html>
